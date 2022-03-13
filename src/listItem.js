@@ -1,7 +1,15 @@
 import React from "react";
 
-export class ListItem extends React.Component {
-    render() {
-        return <li className = {this.props.className}>{ this.props.word }</li>;
-    }
+
+const ListItem = props => {
+    return <li className = {props.className}>{props.word}</li>;
 }
+
+
+// export class ListItem extends React.Component {
+//     render() {
+//         return <li className = {this.props.className}>{ this.props.word }</li>;
+//     }
+// }
+
+export default ListItem;
